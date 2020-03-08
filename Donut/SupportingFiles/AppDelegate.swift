@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Donut
-//
-//  Created by Lionel Camacho on 2020/03/07.
-//  Copyright © 2020 Lionel Camacho. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -14,7 +6,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        UINavigationBar.appearance().barTintColor = .black
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 
