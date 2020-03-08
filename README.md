@@ -1,2 +1,2 @@
-#  An example app to showcase a Donut view
+#  An example iOS app to showcase a Donut view
 
