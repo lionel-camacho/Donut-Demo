@@ -6,14 +6,20 @@ struct CreditScore {
 }
 
 extension CreditScore: Decodable {
-    private enum CreditScoreApiResponseCodingKeys: String, CodingKey {
+    
+    public enum creditReportInfoResponseCodingKeys: String, CodingKey {
+        case creditReportInfo
+    }
+    
+    private enum CreditScoreCodingKeys: String, CodingKey {
         case currentCreditScore = "score"
         case maxCeditScore = "maxScoreValue"
     }
     
     init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CreditScoreApiResponseCodingKeys.self)
-        currentCreditScore = try container.decode(Int.self, forKey: .currentCreditScore)
-        maxCreditScore = try container.decode(Int.self, forKey: .maxCeditScore)
+        let container = try decoder.container(keyedBy: creditReportInfoResponseCodingKeys.self)
+        let creditScoreContainer = try container.nestedContainer(keyedBy: CreditScoreCodingKeys.self, forKey: .creditReportInfo)
+        currentCreditScore = try creditScoreContainer.decode(Int.self, forKey: .currentCreditScore)
+        maxCreditScore = try creditScoreContainer.decode(Int.self, forKey: .maxCeditScore)
     }
 }

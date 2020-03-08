@@ -20,9 +20,20 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = viewModel.title()
+        fetchCreditScoreData()
+    }
+    
+    func fetchCreditScoreData() {
+        showLoadingAlert()
         viewModel.getCreditScore { [weak self] (error) in
-            if error == nil {
-                self?.configureDonut()
+            self?.dismissLoadingAlert()
+            if let error = error, let action = self?.fetchCreditScoreData {
+                self?.showErrorAlert(with: error, action: action)
+                return
+            } else {
+                DispatchQueue.main.async {
+                    self?.configureDonut()
+                }
             }
         }
     }
@@ -53,7 +64,7 @@ class DashboardViewController: UIViewController {
     func animateDonutProgress() {
         let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
         basicAnimation.toValue = viewModel.creditScorePercentage()
-        basicAnimation.duration = 2
+        basicAnimation.duration = 1
         basicAnimation.fillMode = .forwards
         basicAnimation.isRemovedOnCompletion = false
         donutShape.donutLayer.add(basicAnimation, forKey: "basicDonutAnimation")
