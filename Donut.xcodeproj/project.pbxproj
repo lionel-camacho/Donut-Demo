@@ -13,8 +13,6 @@
 		054E23812413BF7700B5D595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054E237F2413BF7700B5D595 /* Main.storyboard */; };
 		054E23832413BF7700B5D595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054E23822413BF7700B5D595 /* Assets.xcassets */; };
 		054E23862413BF7700B5D595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054E23842413BF7700B5D595 /* LaunchScreen.storyboard */; };
-		054E23912413BF7800B5D595 /* DonutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054E23902413BF7800B5D595 /* DonutTests.swift */; };
-		054E239C2413BF7800B5D595 /* DonutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054E239B2413BF7800B5D595 /* DonutUITests.swift */; };
 		05C32EC12413CB750014E225 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C32EC02413CB750014E225 /* DashboardViewModel.swift */; };
 		05C32EC52413F9AD0014E225 /* DonutShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C32EC42413F9AD0014E225 /* DonutShape.swift */; };
 		05C32ECC241404BE0014E225 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C32ECB241404BE0014E225 /* EndpointType.swift */; };
@@ -29,6 +27,10 @@
 		05C32EDF24141B110014E225 /* CreditScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C32EDE24141B110014E225 /* CreditScoreModel.swift */; };
 		05C32EE124141E9A0014E225 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C32EE024141E9A0014E225 /* NetworkManager.swift */; };
 		05D8A9CD241523640087D52A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D8A9CC241523640087D52A /* UIViewController+Extensions.swift */; };
+		05E1BF872417B36600ABD47C /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1BF862417B36600ABD47C /* DashboardViewModelTests.swift */; };
+		05E1BF8A2417CE9600ABD47C /* DonutShapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1BF892417CE9600ABD47C /* DonutShapeTests.swift */; };
+		05E1BF8D2417E03D00ABD47C /* DashboardViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1BF8C2417E03D00ABD47C /* DashboardViewControllerTests.swift */; };
+		05E1BF8F2417F75400ABD47C /* DashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1BF8E2417F75400ABD47C /* DashboardUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +60,8 @@
 		054E23852413BF7700B5D595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054E23872413BF7700B5D595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054E238C2413BF7800B5D595 /* DonutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		054E23902413BF7800B5D595 /* DonutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutTests.swift; sourceTree = "<group>"; };
 		054E23922413BF7800B5D595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054E23972413BF7800B5D595 /* DonutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		054E239B2413BF7800B5D595 /* DonutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutUITests.swift; sourceTree = "<group>"; };
 		054E239D2413BF7800B5D595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054E23A92413C07200B5D595 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05C32EC02413CB750014E225 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -78,6 +78,10 @@
 		05C32EDE24141B110014E225 /* CreditScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreModel.swift; sourceTree = "<group>"; };
 		05C32EE024141E9A0014E225 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		05D8A9CC241523640087D52A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		05E1BF862417B36600ABD47C /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
+		05E1BF892417CE9600ABD47C /* DonutShapeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutShapeTests.swift; sourceTree = "<group>"; };
+		05E1BF8C2417E03D00ABD47C /* DashboardViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerTests.swift; sourceTree = "<group>"; };
+		05E1BF8E2417F75400ABD47C /* DashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +147,9 @@
 		054E238F2413BF7800B5D595 /* DonutTests */ = {
 			isa = PBXGroup;
 			children = (
-				054E23902413BF7800B5D595 /* DonutTests.swift */,
+				05E1BF8B2417E01F00ABD47C /* ViewControllerTests */,
+				05E1BF852417B34100ABD47C /* ViewModelTests */,
+				05E1BF882417CD6100ABD47C /* ShapesTests */,
 				054E23922413BF7800B5D595 /* Info.plist */,
 			);
 			path = DonutTests;
@@ -152,8 +158,8 @@
 		054E239A2413BF7800B5D595 /* DonutUITests */ = {
 			isa = PBXGroup;
 			children = (
-				054E239B2413BF7800B5D595 /* DonutUITests.swift */,
 				054E239D2413BF7800B5D595 /* Info.plist */,
+				05E1BF8E2417F75400ABD47C /* DashboardUITests.swift */,
 			);
 			path = DonutUITests;
 			sourceTree = "<group>";
@@ -258,6 +264,30 @@
 				05D8A9CC241523640087D52A /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05E1BF852417B34100ABD47C /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				05E1BF862417B36600ABD47C /* DashboardViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		05E1BF882417CD6100ABD47C /* ShapesTests */ = {
+			isa = PBXGroup;
+			children = (
+				05E1BF892417CE9600ABD47C /* DonutShapeTests.swift */,
+			);
+			path = ShapesTests;
+			sourceTree = "<group>";
+		};
+		05E1BF8B2417E01F00ABD47C /* ViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				05E1BF8C2417E03D00ABD47C /* DashboardViewControllerTests.swift */,
+			);
+			path = ViewControllerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,7 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				054E23912413BF7800B5D595 /* DonutTests.swift in Sources */,
+				05E1BF8A2417CE9600ABD47C /* DonutShapeTests.swift in Sources */,
+				05E1BF8D2417E03D00ABD47C /* DashboardViewControllerTests.swift in Sources */,
+				05E1BF872417B36600ABD47C /* DashboardViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				054E239C2413BF7800B5D595 /* DonutUITests.swift in Sources */,
+				05E1BF8F2417F75400ABD47C /* DashboardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

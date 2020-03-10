@@ -4,7 +4,7 @@ import UIKit
 class DashboardViewModel {
     var networkManager: NetworkManager
     private let screenTitle = "Dashboard"
-    private var creditScoreResponse: CreditScore?
+    var creditScoreResponse: CreditScore?
     
     init(networkManager: NetworkManager) {
         self.networkManager = networkManager

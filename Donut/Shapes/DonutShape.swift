@@ -11,8 +11,8 @@ class DonutShape {
     
     static private func configureDonutLayer() -> CAShapeLayer {
         let donutShapeLayer = CAShapeLayer()
-        let circularPath = UIBezierPath(arcCenter: .zero, radius: 120, startAngle: 0, endAngle: 2 * .pi, clockwise: true)
-        donutShapeLayer.path = circularPath.cgPath
+        let circularPath = UIBezierPath(arcCenter: .zero, radius: 120, startAngle: 0, endAngle: 2 * .pi, clockwise: true).cgPath
+        donutShapeLayer.path = circularPath
         donutShapeLayer.strokeColor = UIColor.orange.cgColor
         donutShapeLayer.fillColor = UIColor.clear.cgColor
         donutShapeLayer.strokeEnd = 0
@@ -24,8 +24,8 @@ class DonutShape {
     
     static private func configureBorderLayer() -> CAShapeLayer {
         let borderShapeLayer = CAShapeLayer()
-        let circularPath = UIBezierPath(arcCenter: .zero, radius: 127, startAngle: 0, endAngle: 2 * .pi, clockwise: true)
-        borderShapeLayer.path = circularPath.cgPath
+        let circularPath = UIBezierPath(arcCenter: .zero, radius: 127, startAngle: 0, endAngle: 2 * .pi, clockwise: true).cgPath
+        borderShapeLayer.path = circularPath
         borderShapeLayer.strokeColor = UIColor.black.cgColor
         borderShapeLayer.fillColor = UIColor.clear.cgColor
         borderShapeLayer.lineWidth = 1
