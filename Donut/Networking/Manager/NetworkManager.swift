@@ -1,6 +1,5 @@
 import Foundation
 
-//Can be extended to add QA and Staging environments
 enum NetworkEnvironment {
     case qa
     case production
